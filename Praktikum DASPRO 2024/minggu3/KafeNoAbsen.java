@@ -9,6 +9,8 @@ public class KafeNoAbsen {
         float diskon = 10 / 100f;
         double totalHarga;
         double nominalBayar;
+        int nominalInt;
+        byte totalByte;
 
         System.out.print("Masukkan keanggotaan (true/false): ");
         keanggotaan = input.nextBoolean();
@@ -20,8 +22,9 @@ public class KafeNoAbsen {
         jmlRoti = input.nextInt();
 
         totalHarga = (jmlKopi * hargaKopi) + (jmlTeh * hargaTeh) + (jmlRoti * hargaRoti);
-
         nominalBayar = totalHarga - (diskon * totalHarga);
+        totalByte = (byte) totalHarga;
+        nominalInt = (int) nominalBayar;
 
         System.out.println("Keanggotaan pelanggan " + keanggotaan);
         System.out.println("Item pembelian " + jmlKopi + "kopi, " +"teh, " + jmlRoti + "roti" );
