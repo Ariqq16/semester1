@@ -1,6 +1,6 @@
 package minggu5;
 import java.util.Scanner;
-public class PemilihanHari16 {
+public class PemilihanHariDenganIf16 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String dayName, dayType;
@@ -9,15 +9,15 @@ public class PemilihanHari16 {
         dayName = sc.nextLine();
 
         switch (dayName.toLowerCase()) {
-            case "monday":
-            case "tuesday":
-            case "wednesday":
-            case "thursday":
-            case "friday":
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+            case "5":
                 dayType = "weekday";
                 break;
-            case "saturday":
-            case "sunday":
+            case "6":
+            case "7":
                 dayType = "weekend";
                 break;
             default:    
