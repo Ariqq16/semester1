@@ -49,14 +49,10 @@ public class Siakad16 {
         } else if (nilaiAkhir >= 50) {
             nilaiHuruf = "C";
             kualifikasi = "Cukup";
-        } else if (nilaiAkhir >= 39) { 
-            nilaiHuruf = "E";
-            kualifikasi = "Gagal";
         } else {
-            nilaiHuruf = "G";
-            kualifikasi = "Sangat Gagal";
+            nilaiHuruf = "D";
+            kualifikasi = "Gagal";
         }
-
         // Cetak hasil
         System.out.println("\nMahasiswa dengan nama" + nama + " (NIM " + nim + ") kelas " + kelas + "nomro absen" + absen);
         System.out.println("Nilai akhir: " + nilaiAkhir);
